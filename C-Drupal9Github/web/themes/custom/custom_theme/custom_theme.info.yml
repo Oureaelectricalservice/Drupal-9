@@ -1,0 +1,13 @@
+type: theme
+core_version_requirement: ^8 || ^9 || ^10
+name: "Custom Theme"
+version: '1.0'
+base theme: olivero
+regions:
+  header: Header
+  hero: Hero
+  content: Content
+  content_bottom: Content Bottom
+  footer: Footer
+libraries:
+  - custom_theme/custom_theme
