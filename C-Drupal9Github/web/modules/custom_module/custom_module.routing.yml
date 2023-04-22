@@ -5,4 +5,11 @@ custom_module.custom_route:
     _title: "Custom Page Title"
   requirements:
     _permission: 'access content'
+custom_module.custom_config_form:
+  path: '/admin/config/custom-config-form'
+  defaults:
+    _form: '\Drupal\custom_module\Form\CustomConfigForm'
+    _title: 'Custom Config Form'
+  requirements:
+    _permission: 'administer site configuration'
 
