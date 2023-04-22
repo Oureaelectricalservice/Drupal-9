@@ -1,1 +1,12 @@
-<php
+<?php
+
+function custom_theme_preprocess_html(&$variables){
+  $nodes = \Drupal::entityQuery('node')
+    ->condition('type', 'article')
+    ->execute();
+  $queueFactory = \Drupal::service('queue');
+  $queue = $queueFactory->get('custom_queueworker');
+  foreach ($nodes as $nid){
+    $queue->createItem($nid);
+  }
+}

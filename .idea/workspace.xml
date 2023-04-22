@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="165683c6-90bf-46fd-88e9-a23368409b9f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C-Drupal9Github/web/modules/custom_module/custom_module.routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/C-Drupal9Github/web/modules/custom_module/custom_module.routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C-Drupal9Github/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/C-Drupal9Github/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C-Drupal9Github/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/C-Drupal9Github/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C-Drupal9Github/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/C-Drupal9Github/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C-Drupal9Github/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/C-Drupal9Github/vendor/composer/installed.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/C-Drupal9Github/web/sites/default/default.services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/C-Drupal9Github/web/sites/default/default.services.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/C-Drupal9Github/web/themes/custom/custom_theme/custom_theme.theme" beforeDir="false" afterPath="$PROJECT_DIR$/C-Drupal9Github/web/themes/custom/custom_theme/custom_theme.theme" afterDir="false" />
     </list>
@@ -78,13 +81,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/C-Drupal9Github/web/modules/custom_module/src/Form/CustomConfigForm.php</url>
-          <line>63</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/C-Drupal9Github/web/modules/custom_module/src/Form/CustomConfigForm.php</url>
           <line>34</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/C-Drupal9Github/web/modules/custom_module/src/Controller/CustomController.php</url>
+          <line>12</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/C-Drupal9Github/web/modules/custom_module/src/Controller/CustomController.php</url>
+          <line>10</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/C-Drupal9Github/web/themes/custom/custom_theme/custom_theme.theme</url>
+          <line>3</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
