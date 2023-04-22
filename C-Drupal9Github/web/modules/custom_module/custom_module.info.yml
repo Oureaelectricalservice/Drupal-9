@@ -1,0 +1,7 @@
+name: "Custom Module"
+version: "1.0"
+type: module
+core_version_requirement: ^8 || ^9 || ^10
+description: "Custom Moudule for custom code"
+core: 8.x
+package: "Custom"

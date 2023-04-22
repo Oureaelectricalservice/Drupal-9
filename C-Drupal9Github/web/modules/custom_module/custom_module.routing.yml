@@ -1,0 +1,8 @@
+custom_module.custom_route:
+  path: '/custom-module-controller'
+  defaults:
+    _controller: '\Drupal\custom_module\Controller\CustomController::getContent'
+    _title: "Custom Page Title"
+  requirements:
+    _permission: 'access content'
+
