@@ -21,6 +21,8 @@
         "drupal/core-project-message": "^9.5",
         "drupal/core-recommended": "^9.5",
         "drupal/queue_ui": "^2.2",
+        "drupal/quick_node_clone": "^1.16",
+        "drupal/restui": "^1.21",
         "drupal/ultimate_cron": "2.x-dev@dev"
     },
     "conflict": {

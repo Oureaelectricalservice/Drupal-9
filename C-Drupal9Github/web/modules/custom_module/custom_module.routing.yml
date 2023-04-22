@@ -12,4 +12,10 @@ custom_module.custom_config_form:
     _title: 'Custom Config Form'
   requirements:
     _permission: 'administer site configuration'
-
+custom_module.batch_form:
+  path: '/admin/config/batchForm'
+  defaults:
+    _form: '\Drupal\custom_module\Form\BatchForm'
+    _title: 'Update the Title to include TestX'
+  requirements:
+    _permission: 'administer site configuration'
