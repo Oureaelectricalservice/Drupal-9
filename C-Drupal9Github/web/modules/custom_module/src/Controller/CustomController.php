@@ -7,8 +7,11 @@ class CustomController
 
   public function getContent(){
 
+    $db = \Drupal::service('database');
+    $currentUserInfo = \Drupal::service('custom_module.custom_service')->getCurrentUserInfo();
+
     return [
-      "#markup" => "This is content"
+      "#markup" => $currentUserInfo['id']
     ];
   }
 }
