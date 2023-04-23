@@ -47,7 +47,6 @@ class batchForm extends \Drupal\Core\Form\ConfigFormBase
       ->condition('type', $node_type)
       ->execute();
 
-    $nid_group = array_chunk($nids, 2);
     $batch = [
       'title' => 'Nodes Updating...',
       'operations' => [],
@@ -55,22 +54,23 @@ class batchForm extends \Drupal\Core\Form\ConfigFormBase
       'progress_message' => t('Processed @current out of @total.'),
       'finished'=>'\Drupal\custom_module\Form\batchForm::finished'
     ];
-    foreach ($nid_group as $nid_arr){
+    $_batch = array_chunk($nids, 2);
+    foreach ($_batch as $_batchPart){
       $batch['operations'][] = [
-        '\Drupal\custom_module\Form\batchForm::updatingTitle', [$nid_arr]
+        '\Drupal\custom_module\Form\batchForm::updatingTitle',
+        [$_batchPart]
       ];
     }
     batch_set($batch);
-    parent::submitForm($form, $form_state);
+//    parent::submitForm($form, $form_state);
   }
 
-  public function updatingTitle($nid_arr){
-    foreach ($nid_arr as $nid){
-      $node = Node::load($nid);
+  public static function updatingTitle($_batch_nodes){
+    foreach ($_batch_nodes as $node_id){
+      $node = Node::load($node_id);
       $node->setTitle($node->getTitle().' Textxxx');
       $node->save();
     }
-    return [];
   }
 
   public function finished(){
